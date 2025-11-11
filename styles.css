@@ -1,14 +1,17 @@
+/* General Rules */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 body{
     font-family: Lato;
     line-height: 1.5;
 }
+
+/* Navigation bar */
+
 header{
     height: 100px;
     background-color: rgba(255, 0, 0, 0.736);
@@ -63,6 +66,8 @@ svg{
 header nav ul li a.current{
     text-decoration: underline;
 }
+
+/* Main Index.html  */
 
 .main-articles{
     margin-top: 50px;
@@ -135,6 +140,8 @@ main div article div a img{
     margin-right: 40px;
 
 }
+
+/* Footer */
 
 footer{
     padding: 20px 20px;
