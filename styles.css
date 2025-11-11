@@ -11,14 +11,14 @@ body{
 }
 header{
     height: 100px;
-    background-color: rgb(251, 60, 60);
+    background-color: rgba(255, 0, 0, 0.736);
 }
 header nav{
     display: inline-block;
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 25px;
+    padding-top: 22.5px;
 }
 header nav a{
     display: inline-block;
@@ -34,7 +34,7 @@ header nav a img{
     display: inline-block;
     background-color: white;
     height: 0px;
-    width: calc(100% - 500.19px);
+    width: calc(100% - 508.19px);
 }
 header nav ul{
     display: inline-block;
@@ -45,7 +45,7 @@ header nav ul li{
     display: inline;
     font-size: 20px;
     padding-right: 10px;  
-    vertical-align: baseline;
+    vertical-align: middle;
 }
 header nav ul li:last-child{
     padding-right: 0px;
@@ -56,9 +56,14 @@ header nav ul li a{
 }
 
 svg{
-    height: 22px;
-    vertical-align: top;
+    height: 24px;
+    vertical-align: text-top;
 }
+
+header nav ul li a.current{
+    text-decoration: underline;
+}
+
 .main-articles{
     margin-top: 50px;
     margin-bottom: 20px;
@@ -123,17 +128,17 @@ main div article div a img{
 .spacer-older{
     /* border: 1px black solid; */
     display: inline-block;
-    width: calc(100% - 117.47px);
+    width: calc(100% - 157.47px);
 }
 .older{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 40px;
 
 }
 
 footer{
     padding: 20px 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     background-color: rgba(255, 0, 0, 0.736);
 }
 
@@ -177,4 +182,8 @@ footer ul li a{
 
 .last-ul{
     margin-left: calc(100% - 100px);
+}
+
+footer ul li a svg{
+    height: 22px;
 }
