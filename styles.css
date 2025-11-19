@@ -8,8 +8,6 @@
 
 body{
     line-height: 1.5;
-    
-    /* display: grid; */
 }
 
 p,
@@ -60,6 +58,7 @@ header nav a img{
 header nav ul{
     align-content: center;
     justify-content:flex-end;  
+
 }
 header nav ul li{
     display: inline;
@@ -99,30 +98,39 @@ main article{
     width: 1200px;
     /* border: 1px black solid; */
 }
+
+
 .image{
-    display: inline-block;
+    float: left; 
 }
 
 .text{
-    /* border: 1px black solid; */
-    display: inline-block;
+    float: right; 
     width: 500px;
     margin: 80px 5px 0px 40px;
-    vertical-align: top;
 }
 
 .second{
     /* border: 1px black solid; */
-    display: inline-block;
+    /* display: inline-block; */
+    float: left; 
     width: 500px;
     margin: 80px 5px 0px 40px;
-    vertical-align: top;
+    /* vertical-align: top; */
     margin-right: 40px;
 }
 
-.spacer-2{
+/* .spacer-2{
     display: inline-block;
     width: 60px;
+} */ 
+
+/* Requisito 23: Clear Property (para ser usado en index.html) */
+.clearfix {
+    clear: both; 
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 main div article div h2{
@@ -442,6 +450,7 @@ footer p{
     vertical-align: top;
     color: white;
 }
+
 
 footer ul li{
     display: inline;
