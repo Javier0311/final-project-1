@@ -188,6 +188,14 @@ section .video-silksong{
     align-self: self-start;
 }
 
+section .silksong-section-p{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    overflow-y: auto; 
+    scrollbar-width: none;
+    max-height: 145x;
+}
+
 section .steam-section-1{
     grid-row: 3 / 4;
     grid-column: 2 / 3;
@@ -352,8 +360,12 @@ section .section-2-class{
     height: 60px;
     border-radius: 30px;
     background-color: #d56262;
-
+    order: 1;
+    align-self: center;
+    flex-shrink: 1;
+    flex-basis: 180px;
 }
+
 .visit-hollow a{  
     font-weight: 400; 
     align-content: center;
@@ -368,6 +380,10 @@ section .section-2-class{
     height: 60px;
     border-radius: 30px;
     background-color: #d56262;
+    order: 2;
+    align-self: center;
+    flex-shrink: 1;
+    flex-basis: 150px;
 }
 .kit-hollow a{   
     font-weight: 400;
@@ -451,6 +467,7 @@ section .section-2-class{
     gap: 120px;
     width: 100%;
 }
+
 
 .padding-top-about .h3-flex{
     grid-row: 5 / 6;
