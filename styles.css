@@ -3,20 +3,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Ubuntu";
 }
 
 body{
-    font-family: Lato;
     line-height: 1.5;
+    
     /* display: grid; */
 }
 
-/* Navigation bar */
+p,
+a{
+    font-weight: 350;
+}
 
+/* Navigation bar */
 header{
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+
+.header{
     height: 100px;
-    width: auto;
-    background-color: rgba(255, 0, 0, 0.736);
+    width: 100%;
+    background-color: #e83046;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,12 +52,7 @@ header nav a img{
     justify-content: start;
     flex-basis: 500px;
 }
-/* .spacer{
-    display: inline-block;
-    background-color: white;
-    height: 0px;
-    width: calc(100% - 508.19px);
-} */
+
 .header-nav-ul{
     display: flex;
 }
@@ -81,12 +87,10 @@ header nav ul li a.current{
 /* Main Index.html  */
 
 .main-articles{
-    margin-top: 50px;
+    padding-top: 150px;
     margin-bottom: 20px;
     margin-left: 10%;
     margin-right: 10%;
-
-
 }
 
 main article{
@@ -122,8 +126,9 @@ main article{
 }
 
 main div article div h2{
-    font-size: 35px;
-    color: rgba(255, 0, 0, 0.662);
+    font-weight: 500;
+    font-size: 39px;
+    color: #d56262;
 }
 
 main div article div p time{
@@ -131,7 +136,7 @@ main div article div p time{
 }
 
 main div article div a{
-    color: rgba(255, 0, 0, 0.662);
+    color: #d56262;
     font-size: 20px;
 }
 
@@ -157,14 +162,17 @@ main div article div a img{
 }
 
 /* Main games.html */
+
+/* section Silksong */
 section{
     display: grid;
 }
 section .section-1-class{
     display: grid;
+    padding-top: 80px;
     margin: 70px 150px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 260px 140.6px 40px 135px;
+    grid-template-rows: 290px 140.6px 40px 135px;
 }
 
 section .image-title-silksong{
@@ -192,7 +200,7 @@ section .steam-section-1{
 }
 
 section .steam-section-1 a{
-    color: rgba(255, 0, 0, 0.568);
+    color: #d56262;
 }
 
 .flex-site-kit{
@@ -209,7 +217,7 @@ section .steam-section-1 a{
 }
 
 section .site-silksong-1{
-    background-color: rgba(255, 0, 0, 0.568);
+    background-color: #d56262;
     width: 180px;
     height: 60px;
     border-radius: 30px;
@@ -220,12 +228,13 @@ section .site-silksong-1{
 }
 
 section .site-silksong-1 a{
+    font-weight: 400;
     text-decoration: none;
     color: white;
 }
 
 section .kit-silksong-1{
-    background-color: rgba(255, 0, 0, 0.568);
+    background-color: #d56262;
     width: 150px;
     height: 60px;
     border-radius: 30px;
@@ -235,6 +244,7 @@ section .kit-silksong-1{
 }
 
 section .kit-silksong-1 a{
+    font-weight: 400;
     text-decoration: none;
     color: white;
 }
@@ -253,10 +263,124 @@ main .container-line-games{
     height: 1px;
 }
 
+/* Section Hollow Knight */
+
+section{
+    display: grid;
+}
+
+section .section-2-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 90px 50px 50px 130px;
+    margin: 70px 150px;
+}
+
+.section-2-class .image-title-hollow{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+}
+.section-2-class .image-title-hollow img{
+    width: 500px;
+}
+
+.section-2-class .video-hollow{
+    grid-row: 2 / -1;
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+
+.section-2-class .p-section-hollow{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    align-self: center;
+}
+
+.section-2-class .ul-stores-1{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.ul-stores-1 ul{
+    list-style-type: none;
+}
+
+.ul-stores-1 ul li{
+    display: inline;
+}
+
+.ul-stores-1 ul li a{
+    color: #d56262;
+}
+
+.section-2-class .ul-stores-2{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.ul-stores-2 ul{
+    list-style-type: none;
+}
+
+.ul-stores-2 ul li{
+    display: inline;
+}
+
+.ul-stores-2 ul li a{
+    color: #d56262;
+}
+
+.section-2-class .site-kit-hollow{
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.site-kit-hollow .visit-hollow{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #d56262;
+
+}
+.visit-hollow a{  
+    font-weight: 400; 
+    align-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.site-kit-hollow .kit-hollow{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #d56262;
+}
+.kit-hollow a{   
+    font-weight: 400;
+    align-content: center;
+    color: white;
+    text-decoration: none;
+}
 /* Footer */
 .footer{
     display: grid;
-    background-color: rgba(255, 0, 0, 0.736);
+    background-color: #e83046;
     margin-top: 50px;
 }
 
