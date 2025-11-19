@@ -19,7 +19,7 @@ a{
 header{
     position: fixed;
     width: 100%;
-    display: block;
+    /* display: block; */
 }
 
 .header{
@@ -96,46 +96,34 @@ main article{
     margin-bottom: 10px;
     height: 550px;
     width: 1200px;
-    /* border: 1px black solid; */
-}
 
+}
 
 .image{
     float: left; 
 }
 
 .text{
+    width: 580px;
     float: right; 
-    width: 500px;
-    margin: 80px 5px 0px 40px;
+    margin: 80px 10px 0px 0px;
 }
 
 .second{
-    /* border: 1px black solid; */
-    /* display: inline-block; */
     float: left; 
-    width: 500px;
-    margin: 80px 5px 0px 40px;
-    /* vertical-align: top; */
+    width: 520px;
+    margin: 100px 5px 0px 40px;
+    padding-top: 50px;
     margin-right: 40px;
 }
 
-/* .spacer-2{
-    display: inline-block;
-    width: 60px;
-} */ 
-
-/* Requisito 23: Clear Property (para ser usado en index.html) */
-.clearfix {
-    clear: both; 
-    display: block;
-    height: 0;
-    visibility: hidden;
+.image-2{
+    float: right;
 }
 
 main div article div h2{
     font-weight: 500;
-    font-size: 39px;
+    font-size: 42px;
     color: #d56262;
 }
 
@@ -154,24 +142,22 @@ main div article div a img{
     max-height: 550px;
     width: 100%;    
 }
-.spacer-older{
-    /* border: 1px black solid; */
-    display: inline-block;
-    width: calc(94% - 157.47px);
-}
+
 .older{
-    display: inline-block;
-    margin-right: 40px;
+    float: right;
+    margin: 60px 0px;
 }
 
 .older a{
     text-decoration: none;
     color: black;
+    font-size: 17px;
 }
 
 /* Main games.html */
 
 /* section Silksong */
+
 section{
     display: grid;
 }
@@ -181,6 +167,8 @@ section .section-1-class{
     margin: 70px 150px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 290px 140.6px 40px 135px;
+    column-gap: 20px;
+    row-gap: 5px;
 }
 
 section .image-title-silksong{
@@ -280,7 +268,9 @@ section{
 section .section-2-class{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 90px 50px 50px 130px;
+    grid-template-rows: 200px 90px 50px 50px 130px; 
+    row-gap: 5px;
+    column-gap: 5px;
     margin: 70px 150px;
 }
 
@@ -385,6 +375,127 @@ section .section-2-class{
     color: white;
     text-decoration: none;
 }
+
+/* merchandise.html */
+
+.merchan-1{
+    display: block;
+    width: 900px;
+    padding-top: 150px;
+    margin: 0px auto;
+    
+    
+}
+.merchan-1 a img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.merchan-2{
+    display: block;
+    width: 850px;
+    margin: 50px auto;
+    
+    
+}
+.merchan-2 a img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* about.html */
+
+.padding-top-about{
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 365px 70px 50px 198px 40px 250px;
+    row-gap: 30px;
+}
+
+.padding-top-about #logo-team-about{
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    align-self: center;
+    justify-self: center;
+}
+
+.padding-top-about .p-about-page{
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    align-self: center;
+    justify-self: center;
+}
+
+.p-about-page p{
+    font-size: 18px;
+}
+
+.padding-top-about .title-about-page{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.padding-top-about .photos-flex{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 120px;
+    width: 100%;
+}
+
+.padding-top-about .h3-flex{
+    grid-row: 5 / 6;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 220px;
+    width: 100%;
+}
+
+.title-about-page h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.h3-flex div h3{
+    font-weight: 500;
+
+}
+
+.padding-top-about .p-flex{
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.p-flex div p{
+    line-height: 1.5;
+}
+
+.p-gibson,
+.p-william,
+.p-jack{
+    width: 270px;
+}
+
 /* Footer */
 .footer{
     display: grid;
@@ -413,6 +524,7 @@ footer .footer-right-1{
     grid-column: 2 / 3;
     justify-self: end;
     align-self: center;
+    display: inline-block;
 }
 
 footer .footer-left-2{
@@ -451,9 +563,8 @@ footer p{
     color: white;
 }
 
-
 footer ul li{
-    display: inline;
+    display: inline-block;
     color: white;
 }
 footer ul li a{
