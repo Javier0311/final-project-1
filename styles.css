@@ -583,6 +583,7 @@ footer p{
 footer ul li{
     display: inline-block;
     color: white;
+    height: 30px;
 }
 footer ul li a{
     /* text-decoration: none; */
