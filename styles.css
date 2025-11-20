@@ -193,7 +193,7 @@ section .silksong-section-p{
     grid-column: 2 / 3;
     overflow-y: auto; 
     scrollbar-width: none;
-    max-height: 145x;
+    max-height: 145px;
 }
 
 section .steam-section-1{
